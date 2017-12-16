@@ -1,0 +1,4 @@
+name: FireFlakeCore
+version: 1
+author: Spoch
+main: no.fireflake.core.Core
