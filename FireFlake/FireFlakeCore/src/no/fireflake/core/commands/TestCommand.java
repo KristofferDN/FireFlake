@@ -13,7 +13,7 @@ public class TestCommand extends Command {
 
 	@Override
 	public void run(Player player) {
-		player.sendMessage("Test! Dette var en flott test-melding ;) - Spoch");
+		player.sendMessage("Test! Dette var en rar test-melding ;) - Spoch");
 	}
 
 }
