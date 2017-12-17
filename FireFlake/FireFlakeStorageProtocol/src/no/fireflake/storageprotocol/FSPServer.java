@@ -23,9 +23,7 @@ public class FSPServer {
 			System.out.println("[Server] Connection established");
 
 			BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-			while (!serverSocket.isClosed()) {
-				System.out.println("[Server] " + in.readLine());
-			}
+			System.out.println("[Server] " + in.readLine());
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}

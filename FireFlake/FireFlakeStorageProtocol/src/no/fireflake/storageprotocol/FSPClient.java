@@ -22,6 +22,7 @@ public class FSPClient {
 			
 			PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
 			out.println("Test!");
+			out.println("Tests!");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

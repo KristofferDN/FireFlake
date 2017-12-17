@@ -7,6 +7,12 @@ public class FSP {
 		FSPClient client = new FSPClient("localhost", 55037);
 		
 		server.openConnection();
+		try {
+			Runtime.getRuntime().wait(1);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		client.openConnection();
 	}
 	
