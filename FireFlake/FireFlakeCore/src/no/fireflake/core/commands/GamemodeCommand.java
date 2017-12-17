@@ -10,7 +10,7 @@ public class GamemodeCommand extends Command {
 
 	@Override
 	public void initCommand() {
-		command = "/gm"
+		command = "/gm";
 	}
 
 	@Override
