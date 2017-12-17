@@ -14,7 +14,7 @@ public class TeleportCommand extends Command {
 	}
 
 	@Override
-	public void run(Player player) {
+	public void run(Player player, String[] args) {
 		Location loc = Core.plugin.getServer().getWorld("MEMEWorld").getSpawnLocation();
 		player.teleport(loc);
 	}

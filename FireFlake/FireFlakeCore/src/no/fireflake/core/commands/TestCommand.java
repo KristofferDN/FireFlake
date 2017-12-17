@@ -12,7 +12,7 @@ public class TestCommand extends Command {
 	}
 
 	@Override
-	public void run(Player player) {
+	public void run(Player player, String[] args) {
 		player.sendMessage("Test! Dette var en rar test-melding ;) - Spoch");
 	}
 

@@ -8,8 +8,10 @@ public class Listener implements org.bukkit.event.Listener {
 	@EventHandler
 	public void onCommand(PlayerCommandPreprocessEvent e) {
 		for (Command command : Core.plugin.handler.getList()) {
-			if (e.getMessage().equals(command.command)) {
-				command.run(e.getPlayer());
+			if (e.getMessage().startsWith(command.command)) {
+				String argsString = e.getMessage().replaceFirst(command.command + " ", "");
+				String[] args = argsString.split(" ");
+				command.run(e.getPlayer(), args);
 				e.setCancelled(true);
 			}
 		}
