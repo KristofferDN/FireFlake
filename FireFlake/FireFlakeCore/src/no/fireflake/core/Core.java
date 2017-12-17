@@ -18,7 +18,7 @@ public class Core extends JavaPlugin {
 		
 		handler.registerCommand(new TestCommand());
 		handler.registerCommand(new TeleportCommand());
-		handler.registerCommand(new GamemodeCommand());
+		handler.registerCommand(new GamemodeCommand())
 	}
 	
 }
