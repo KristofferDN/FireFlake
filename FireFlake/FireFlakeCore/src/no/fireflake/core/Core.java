@@ -2,6 +2,7 @@ package no.fireflake.core;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import no.fireflake.core.commands.GamemodeCommand;
 import no.fireflake.core.commands.TeleportCommand;
 import no.fireflake.core.commands.TestCommand;
 
@@ -17,6 +18,7 @@ public class Core extends JavaPlugin {
 		
 		handler.registerCommand(new TestCommand());
 		handler.registerCommand(new TeleportCommand());
+		handler.registerCommand(new GamemodeCommand());
 	}
 	
 }
